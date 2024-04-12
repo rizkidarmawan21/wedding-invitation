@@ -12,8 +12,6 @@ function app() {
         handleOpenInvitation() {
             this.isLoadingCover = true;
             setTimeout(() => {
-                this.music = true;
-                this.audio.play();
                 this.openInvitation = true;
                 this.isLoadingCover = false;
 
@@ -28,6 +26,9 @@ function app() {
                 }
 
             }, 1000);
+
+            this.music = true;
+            this.audio.play();
         },
 
         handleMusic() {
