@@ -27,8 +27,7 @@ function app() {
 
             }, 1000);
 
-            this.music = true;
-            this.audio.play();
+            this.handleMusic();
         },
 
         handleMusic() {
