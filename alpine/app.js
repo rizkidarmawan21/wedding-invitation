@@ -6,8 +6,7 @@ function app() {
         audio: '',
 
         init() {
-            this.audio = new Audio('assets/music.mp3');
-            this.audio.loop = true;
+            this.audio = document.getElementById('myAudio');
         },
 
         handleOpenInvitation() {
@@ -27,7 +26,6 @@ function app() {
                 }
                 if (mainContentElement) {
                     this.music = true;
-
                     this.audio.play();
                 }
             }, 1000);
