@@ -282,26 +282,26 @@
               Acara Akan Diselenggarakan
             </h1>
             <div>
-              <p class="font-great text-5xl text-white drop-shadow-xl">33</p>
+              <p class="font-great text-5xl text-white drop-shadow-xl text-center" x-text="timeLeft.days"></p>
               <span class="text-xl text-white drop-shadow-xl"> Hari </span>
             </div>
             <div class="flex gap-5">
               <div
                 class="text-center bg-white border border-[#C9C9C9] shadow-md px-5 py-1 rounded-xl text-3xl"
               >
-                <p class="font-great">12</p>
-                <p class="text-xs">Menit</p>
-              </div>
-              <div
-                class="text-center bg-white border border-[#C9C9C9] shadow-md px-5 py-1 rounded-xl text-3xl"
-              >
-                <p class="font-great">12</p>
+                <p class="font-great" x-text="timeLeft.hours"></p>
                 <p class="text-xs">Jam</p>
               </div>
               <div
                 class="text-center bg-white border border-[#C9C9C9] shadow-md px-5 py-1 rounded-xl text-3xl"
               >
-                <p class="font-great">12</p>
+                <p class="font-great" x-text="timeLeft.minutes"></p>
+                <p class="text-xs">Menit</p>
+              </div>
+              <div
+                class="text-center bg-white border border-[#C9C9C9] shadow-md px-5 py-1 rounded-xl text-3xl"
+              >
+                <p class="font-great" x-text="timeLeft.seconds"></p>
                 <p class="text-xs">Detik</p>
               </div>
             </div>
