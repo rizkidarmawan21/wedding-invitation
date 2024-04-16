@@ -6,12 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
+    <meta name="theme-color" content="#f8fafc">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mate+SC&family=Judson:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="manifest" href="manifest.json">
     <title>Wedding Invitation</title>
     <style>
       * {
@@ -569,5 +571,12 @@
       </section>
     </main>
   </body>
+  <script>
+    window.addEventListener("load",()=> {
+      if("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js")
+      }
+    })
+  </script>
   <script src="./alpine/app.js"></script>
 </html>
