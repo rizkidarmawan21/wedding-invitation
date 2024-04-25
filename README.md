@@ -9,3 +9,4 @@ Tool:
 1. Tailwind CSS
 2. Native CSS
 3. HTML
+4. Alpine JS
